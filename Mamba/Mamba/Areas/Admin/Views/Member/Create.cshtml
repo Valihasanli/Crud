@@ -1,0 +1,28 @@
+﻿@using Mamba.Models
+
+@model Member
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label asp-for="Fulllname" class="form-label">FullName</label>
+            <input asp-for="Fulllname" class="form-control" />
+        </div>
+        <span asp-validation-for="Proffesion" style="color:red"></span>
+        <div class="mb-3">
+            <label asp-for="ImgFile" class="form-label">ImageFile</label>
+            <input asp-for="ImgFile" class="form-control" />
+
+        </div>
+        <span asp-validation-for="Fulllname" style="color:red"></span>
+        <div class="mb-3">
+            <label asp-for="Proffesion" class="form-label">Profession</label>
+            <input asp-for="Proffesion" class="form-control" />
+
+        </div>
+
+        <span asp-validation-for="ImgFile" style="color:red"></span>
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
